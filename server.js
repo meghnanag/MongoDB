@@ -37,8 +37,8 @@ var routes = require("./controllers/scraper_controller.js");
 
 app.use("/", routes);
 
-const MONGDB_URI = process.env.MONGDB_URI || 'mongodb://localhost/test'
-mongoose.connect(MONGDB_URI);
+//const MONGDB_URI = process.env.MONGDB_URI || 'mongodb://localhost/newsdb'
+mongoose.connect( "mongodb://heroku_zdh0w756:f4aqk2fljt584d24q7i40mdsqt@ds261450.mlab.com:61450/heroku_zdh0w756");
 
 var db = mongoose.connection;
 
